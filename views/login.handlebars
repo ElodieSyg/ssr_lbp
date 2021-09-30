@@ -1,0 +1,26 @@
+<div class="content_log">
+    {{> header}}
+    <div class="login_content">
+        <div class="login_title_content">
+            <h1 class="login_title">{{title}}</h1>
+        </div>
+
+        <div class="login_form">
+            <form class="form_content" method="POST" action="/login">
+                <label for="username" class="login_text">{{username}}</label>
+                <input type="text" id="username" name="username" placeholder="type your username..."
+                    class="login_text input_text" />
+
+                <label for="password" class="login_text">{{password}}</label>
+                <input type="password" id="password" name="password" placeholder="type your password..."
+                    class="login_text input_text" />
+
+                <div class="button_content">
+                    <button class="button_style">{{login}}</button>
+                </div>
+
+                <a href="/signin" class="login_text">{{account}}</a>
+            </form>
+        </div>
+    </div>
+</div>

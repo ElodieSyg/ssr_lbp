@@ -1,0 +1,31 @@
+<div class="content_sign">
+    {{> header}}
+    <div class="sign_content">
+        <div class="sign_title_content">
+            <h1 class="login_title">{{title}}</h1>
+        </div>
+
+        <div class="sign_form">
+            <form class="form_content" method="POST" action="/signin">
+                <label for="username" class="login_text">{{username}}</label>
+                <input type="text" name="username" id="username" class="login_text input_text" />
+
+                <label for="password" class="login_text">{{password}}</label>
+                <input type="password" name="password" id="password" class="login_text input_text" />
+
+                <label for="first_name" class="login_text">{{first_name}}</label>
+                <input type="text" name="firstName" id="first_name" class="login_text input_text" />
+
+                <label for="surname" class="login_text">{{surname}}</label>
+                <input type="text" name="surname" id="surname" class="login_text input_text" />
+
+                <div class="button_content">
+                    <label for="picture" class="login_text">{{image}}</label>
+                    <input type="file" name="image" id="picture" class="input_picture"></input>
+
+                    <button class="button_style">{{submit}}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
